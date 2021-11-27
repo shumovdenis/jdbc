@@ -1,1 +1,1 @@
-select product_name from Orders join netology.Customers C on C.id = Orders.customer_id where name = ?
+select o.productName from Order o join Customer C on C.id = o.customer_id where name = :name
